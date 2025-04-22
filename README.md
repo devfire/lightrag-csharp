@@ -2,9 +2,13 @@
 
 ## Description
 
-This project provides a Python script (`populate_graph.py`) to parse code analysis data, presumably generated from C# projects using Roslyn (or a similar tool producing a compatible JSON format), and import it into a Neo4j graph database. It leverages the Neo4j Python driver and the APOC library for efficient batch processing and dynamic graph element creation.
+This project provides a Python script (`populate_graph.py`) to parse code analysis data,  generated from C# projects using https://github.com/devfire/RoslynCodeAnalyzer, and import it into a Neo4j graph database. 
 
-The goal is to represent the structure and relationships within a C# codebase as a graph, enabling complex queries and analysis.
+It leverages the Neo4j Python driver and the APOC library for efficient batch processing and dynamic graph element creation.
+
+The goal is to represent the structure and relationships within a C# codebase as a graph, enabling complex queries and analysis, specifically by Neo4j MCP server. 
+
+See https://neo4j.com/blog/developer/claude-converses-neo4j-via-mcp/ for more details.
 
 ## Features
 
@@ -127,10 +131,6 @@ Instead of command-line arguments, you can configure the Neo4j connection using 
 *   `NEO4J_USER`
 *   `NEO4J_PASSWORD`
 
-## Contributing
-
-(Optional: Add guidelines for contributing if applicable).
-
 ## License
 
-(Optional: Add license information if applicable).
+MIT: do you whatever you want.
